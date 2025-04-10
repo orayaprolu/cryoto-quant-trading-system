@@ -26,3 +26,38 @@ The goal is to demonstrate strong systems engineering skills, familiarity with q
 | Dashboard        | Streamlit or Dash (Python)                         |
 
 ## 🔁 System Flow
+
+[ Exchange API ] → [ C++ Ingestion Layer ] → [ Strategy Engine ]
+↓
+[ Backtesting ]
+↓
+[ Execution Logic ]
+↓
+[ Logging + CSV ]
+↓
+[ Python Dashboard (Live/Backtest View) ]
+
+## 📂 Folder Structure
+
+/src
+main.cpp
+ingest/
+strategy/
+backtest/
+execution/
+risk/
+utils/
+/include
+(Headers)
+/data
+(Historical data, CSV output)
+/dashboard
+(Python Streamlit/Dash app)
+/tests
+README.md
+CMakeLists.txt
+
+---
+
+
+
