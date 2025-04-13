@@ -14,10 +14,8 @@ static size_t WriteCallback(void* contents, size_t size, size_t nmemb, void* use
     return size * nmemb;
 }
 
-int main() {
-    const std::string symbol = "BTCUSDT";
-    const std::string interval = "1m";
-    const int limit = 100;
+void binance_data_to_csv(std::string symbol, std::string interval, const int limit = 100) {
+    symbol += "USDT";
 
     std::string url = "https://api.binance.com/api/v3/klines?symbol=" + symbol +
                       "&interval=" + interval + "&limit=" + std::to_string(limit);
@@ -48,25 +46,28 @@ int main() {
             json response = json::parse(readBuffer);
 
             // Write to CSV
-            std::ofstream outFile("../data/BTCUSDT_1m.csv");
+            std::ofstream outFile("../data/" + symbol + "_" + interval + ".csv");
             outFile << "OpenTime,Open,High,Low,Close,Volume\n";
 
             for (const auto& candle : response) {
                 outFile
-                    << candle[0] << ","   // Open time (ms)
-                    << candle[1] << ","   // Open price
-                    << candle[2] << ","   // High price
-                    << candle[3] << ","   // Low price
-                    << candle[4] << ","   // Close price
-                    << candle[5] << "\n"; // Volume
+                    << candle[0].get<int64_t>() << ","   // Open time
+                    << std::stod(candle[1].get<std::string>()) << ","   // Open
+                    << std::stod(candle[2].get<std::string>()) << ","   // High
+                    << std::stod(candle[3].get<std::string>()) << ","   // Low
+                    << std::stod(candle[4].get<std::string>()) << ","   // Close
+                    << std::stod(candle[5].get<std::string>()) << "\n"; // Volume
             }
 
-            std::cout << "Saved " << response.size() << " candles to data/BTCUSDT_1m.csv\n";
+            std::cout << "Saved " << response.size() << " candles to data/" + symbol + "_" + interval + ".csv\n";
         }
 
         curl_easy_cleanup(curl);
     }
 
     curl_global_cleanup();
+}
+
+int main() {
     return 0;
 }
