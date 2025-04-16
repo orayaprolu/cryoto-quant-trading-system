@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/ojasr/Documents/Repos/cryoto-quant-trading-system/data_ingestion/binance_fetch.cpp" "CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o" "gcc" "CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o.d"
+  "/Users/ojasr/Documents/Repos/crypto-quant-trading-system/data_ingestion/binance_fetch.cpp" "CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o" "gcc" "CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

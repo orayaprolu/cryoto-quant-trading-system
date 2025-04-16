@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CryptoQuantTradingPlatform",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "binance_fetch::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-binance_fetch-cea535fcc8f373556afc.json",
+					"name" : "binance_fetch",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "data_loader::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-data_loader-2c6f1c1989e736cb1745.json",
+					"name" : "data_loader",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "strategy_loader::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-strategy_loader-26d380e20118364bae85.json",
+					"name" : "strategy_loader",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/ojasr/Documents/Repos/crypto-quant-trading-system/build",
+		"source" : "/Users/ojasr/Documents/Repos/crypto-quant-trading-system"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

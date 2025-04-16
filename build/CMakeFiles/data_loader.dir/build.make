@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ojasr/Documents/Repos/cryoto-quant-trading-system
+CMAKE_SOURCE_DIR = /Users/ojasr/Documents/Repos/crypto-quant-trading-system
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build
+CMAKE_BINARY_DIR = /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/data_loader.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/data_loader.dir/progress.make
 include CMakeFiles/data_loader.dir/flags.make
 
 CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.o: CMakeFiles/data_loader.dir/flags.make
-CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.o: /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/backtesting_engine/data_loader.cpp
+CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.o: /Users/ojasr/Documents/Repos/crypto-quant-trading-system/backtesting_engine/data_loader.cpp
 CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.o: CMakeFiles/data_loader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin24-g++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.o -MF CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.o.d -o CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.o -c /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/backtesting_engine/data_loader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.o -MF CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.o.d -o CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.o -c /Users/ojasr/Documents/Repos/crypto-quant-trading-system/backtesting_engine/data_loader.cpp
 
 CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin24-g++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/backtesting_engine/data_loader.cpp > CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ojasr/Documents/Repos/crypto-quant-trading-system/backtesting_engine/data_loader.cpp > CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.i
 
 CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin24-g++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/backtesting_engine/data_loader.cpp -o CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ojasr/Documents/Repos/crypto-quant-trading-system/backtesting_engine/data_loader.cpp -o CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.s
 
 CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.o: CMakeFiles/data_loader.dir/flags.make
-CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.o: /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/backtesting_engine/CandleStream.cpp
+CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.o: /Users/ojasr/Documents/Repos/crypto-quant-trading-system/backtesting_engine/CandleStream.cpp
 CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.o: CMakeFiles/data_loader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin24-g++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.o -MF CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.o.d -o CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.o -c /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/backtesting_engine/CandleStream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.o -MF CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.o.d -o CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.o -c /Users/ojasr/Documents/Repos/crypto-quant-trading-system/backtesting_engine/CandleStream.cpp
 
 CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin24-g++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/backtesting_engine/CandleStream.cpp > CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ojasr/Documents/Repos/crypto-quant-trading-system/backtesting_engine/CandleStream.cpp > CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.i
 
 CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin24-g++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/backtesting_engine/CandleStream.cpp -o CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ojasr/Documents/Repos/crypto-quant-trading-system/backtesting_engine/CandleStream.cpp -o CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.s
 
 # Object files for target data_loader
 data_loader_OBJECTS = \
@@ -109,7 +109,7 @@ data_loader: CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.o
 data_loader: CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.o
 data_loader: CMakeFiles/data_loader.dir/build.make
 data_loader: CMakeFiles/data_loader.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable data_loader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable data_loader"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/data_loader.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/data_loader.dir/clean:
 .PHONY : CMakeFiles/data_loader.dir/clean
 
 CMakeFiles/data_loader.dir/depend:
-	cd /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ojasr/Documents/Repos/cryoto-quant-trading-system /Users/ojasr/Documents/Repos/cryoto-quant-trading-system /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build/CMakeFiles/data_loader.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ojasr/Documents/Repos/crypto-quant-trading-system /Users/ojasr/Documents/Repos/crypto-quant-trading-system /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles/data_loader.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/data_loader.dir/depend
 

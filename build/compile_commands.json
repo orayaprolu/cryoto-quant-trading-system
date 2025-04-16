@@ -1,20 +1,26 @@
 [
 {
-  "directory": "/Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build",
-  "command": "/opt/homebrew/bin/aarch64-apple-darwin24-g++-14  -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o -c /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/data_ingestion/binance_fetch.cpp",
-  "file": "/Users/ojasr/Documents/Repos/cryoto-quant-trading-system/data_ingestion/binance_fetch.cpp",
+  "directory": "/Users/ojasr/Documents/Repos/crypto-quant-trading-system/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o -c /Users/ojasr/Documents/Repos/crypto-quant-trading-system/data_ingestion/binance_fetch.cpp",
+  "file": "/Users/ojasr/Documents/Repos/crypto-quant-trading-system/data_ingestion/binance_fetch.cpp",
   "output": "CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o"
 },
 {
-  "directory": "/Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build",
-  "command": "/opt/homebrew/bin/aarch64-apple-darwin24-g++-14   -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.o -c /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/backtesting_engine/data_loader.cpp",
-  "file": "/Users/ojasr/Documents/Repos/cryoto-quant-trading-system/backtesting_engine/data_loader.cpp",
+  "directory": "/Users/ojasr/Documents/Repos/crypto-quant-trading-system/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.o -c /Users/ojasr/Documents/Repos/crypto-quant-trading-system/backtesting_engine/data_loader.cpp",
+  "file": "/Users/ojasr/Documents/Repos/crypto-quant-trading-system/backtesting_engine/data_loader.cpp",
   "output": "CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.o"
 },
 {
-  "directory": "/Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build",
-  "command": "/opt/homebrew/bin/aarch64-apple-darwin24-g++-14   -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.o -c /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/backtesting_engine/CandleStream.cpp",
-  "file": "/Users/ojasr/Documents/Repos/cryoto-quant-trading-system/backtesting_engine/CandleStream.cpp",
+  "directory": "/Users/ojasr/Documents/Repos/crypto-quant-trading-system/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.o -c /Users/ojasr/Documents/Repos/crypto-quant-trading-system/backtesting_engine/CandleStream.cpp",
+  "file": "/Users/ojasr/Documents/Repos/crypto-quant-trading-system/backtesting_engine/CandleStream.cpp",
   "output": "CMakeFiles/data_loader.dir/backtesting_engine/CandleStream.cpp.o"
+},
+{
+  "directory": "/Users/ojasr/Documents/Repos/crypto-quant-trading-system/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/strategy_loader.dir/backtesting_engine/strategy_loader.cpp.o -c /Users/ojasr/Documents/Repos/crypto-quant-trading-system/backtesting_engine/strategy_loader.cpp",
+  "file": "/Users/ojasr/Documents/Repos/crypto-quant-trading-system/backtesting_engine/strategy_loader.cpp",
+  "output": "CMakeFiles/strategy_loader.dir/backtesting_engine/strategy_loader.cpp.o"
 }
 ]

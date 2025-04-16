@@ -1,5 +1,7 @@
 #include "CandleStream.hpp"
 #include <cstdint>
+#include <iostream>
+#include <ostream>
 #include <sstream>
 #include <string>
 
@@ -34,48 +36,31 @@ void CandleStream::advance() {
 // Advances to timestamp
 void CandleStream::advance(int64_t timestamp) {
 
-  // Go past all the the candles before
+  // While our current candle's time stamp is less than targeted timestamp, keep going
   std::string line;
-  for(int64_t i = currentCandle.timestamp; i < timestamp; ++i){
-    if (!std::getline(file, line)) { };
+  while (currentCandle.timestamp < timestamp) {
+    if (std::getline(file, line)) {
+      std::stringstream ss(line);
+      std::string item;
+
+      Candle c;
+
+      std::getline(ss, item, ','); c.timestamp = std::stoll(item);
+
+      std::getline(ss, item, ','); c.open = std::stod(item);
+      std::getline(ss, item, ','); c.high = std::stod(item);
+      std::getline(ss, item, ','); c.low = std::stod(item);
+      std::getline(ss, item, ','); c.close = std::stod(item);
+      std::getline(ss, item, ','); c.volume = std::stod(item);
+
+      currentCandle = c;
+    } else {
+      done = true;
+      return;
+    }
   }
 
-  // save cur candle
-  if (std::getline(file, line)) {
-    std::stringstream ss(line);
-    std::string item;
-
-    Candle c;
-
-    std::getline(ss, item, ','); c.timestamp = std::stoll(item);
-
-    std::getline(ss, item, ','); c.open = std::stod(item);
-    std::getline(ss, item, ','); c.high = std::stod(item);
-    std::getline(ss, item, ','); c.low = std::stod(item);
-    std::getline(ss, item, ','); c.close = std::stod(item);
-    std::getline(ss, item, ','); c.volume = std::stod(item);
-
-    currentCandle = c;
-  } else {
-    done = true;
+  if (currentCandle.timestamp != timestamp) {
+    std::cout << "timestamp out of synch somehow" << std::endl;
   }
-
-    // std::string line;
-    // if (std::getline(file, line)) {
-    //     std::stringstream ss(line);
-    //     std::string item;
-
-    //     Candle c;
-
-    //     std::getline(ss, item, ','); c.timestamp = std::stoll(item);
-    //     std::getline(ss, item, ','); c.open = std::stod(item);
-    //     std::getline(ss, item, ','); c.high = std::stod(item);
-    //     std::getline(ss, item, ','); c.low = std::stod(item);
-    //     std::getline(ss, item, ','); c.close = std::stod(item);
-    //     std::getline(ss, item, ','); c.volume = std::stod(item);
-
-    //     currentCandle = c;
-    // } else {
-    //     done = true;
-    // }
 }

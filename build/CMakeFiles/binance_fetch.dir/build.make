@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ojasr/Documents/Repos/cryoto-quant-trading-system
+CMAKE_SOURCE_DIR = /Users/ojasr/Documents/Repos/crypto-quant-trading-system
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build
+CMAKE_BINARY_DIR = /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/binance_fetch.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/binance_fetch.dir/progress.make
 include CMakeFiles/binance_fetch.dir/flags.make
 
 CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o: CMakeFiles/binance_fetch.dir/flags.make
-CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o: /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/data_ingestion/binance_fetch.cpp
+CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o: /Users/ojasr/Documents/Repos/crypto-quant-trading-system/data_ingestion/binance_fetch.cpp
 CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o: CMakeFiles/binance_fetch.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin24-g++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o -MF CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o.d -o CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o -c /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/data_ingestion/binance_fetch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o -MF CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o.d -o CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o -c /Users/ojasr/Documents/Repos/crypto-quant-trading-system/data_ingestion/binance_fetch.cpp
 
 CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin24-g++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/data_ingestion/binance_fetch.cpp > CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ojasr/Documents/Repos/crypto-quant-trading-system/data_ingestion/binance_fetch.cpp > CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.i
 
 CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin24-g++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/data_ingestion/binance_fetch.cpp -o CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ojasr/Documents/Repos/crypto-quant-trading-system/data_ingestion/binance_fetch.cpp -o CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.s
 
 # Object files for target binance_fetch
 binance_fetch_OBJECTS = \
@@ -94,7 +94,7 @@ binance_fetch: CMakeFiles/binance_fetch.dir/data_ingestion/binance_fetch.cpp.o
 binance_fetch: CMakeFiles/binance_fetch.dir/build.make
 binance_fetch: /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/libcurl.tbd
 binance_fetch: CMakeFiles/binance_fetch.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable binance_fetch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable binance_fetch"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/binance_fetch.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -106,6 +106,6 @@ CMakeFiles/binance_fetch.dir/clean:
 .PHONY : CMakeFiles/binance_fetch.dir/clean
 
 CMakeFiles/binance_fetch.dir/depend:
-	cd /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ojasr/Documents/Repos/cryoto-quant-trading-system /Users/ojasr/Documents/Repos/cryoto-quant-trading-system /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build/CMakeFiles/binance_fetch.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ojasr/Documents/Repos/crypto-quant-trading-system /Users/ojasr/Documents/Repos/crypto-quant-trading-system /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles/binance_fetch.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/binance_fetch.dir/depend
 

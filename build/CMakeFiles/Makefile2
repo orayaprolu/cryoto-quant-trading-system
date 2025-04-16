@@ -54,10 +54,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ojasr/Documents/Repos/cryoto-quant-trading-system
+CMAKE_SOURCE_DIR = /Users/ojasr/Documents/Repos/crypto-quant-trading-system
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build
+CMAKE_BINARY_DIR = /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/buil
 # The main recursive "all" target.
 all: CMakeFiles/binance_fetch.dir/all
 all: CMakeFiles/data_loader.dir/all
+all: CMakeFiles/strategy_loader.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/binance_fetch.dir/clean
 clean: CMakeFiles/data_loader.dir/clean
+clean: CMakeFiles/strategy_loader.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -83,14 +85,14 @@ clean: CMakeFiles/data_loader.dir/clean
 CMakeFiles/binance_fetch.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/binance_fetch.dir/build.make CMakeFiles/binance_fetch.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/binance_fetch.dir/build.make CMakeFiles/binance_fetch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build/CMakeFiles --progress-num=1,2 "Built target binance_fetch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles --progress-num=1,2 "Built target binance_fetch"
 .PHONY : CMakeFiles/binance_fetch.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/binance_fetch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/binance_fetch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles 0
 .PHONY : CMakeFiles/binance_fetch.dir/rule
 
 # Convenience name for target.
@@ -109,14 +111,14 @@ CMakeFiles/binance_fetch.dir/clean:
 CMakeFiles/data_loader.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_loader.dir/build.make CMakeFiles/data_loader.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_loader.dir/build.make CMakeFiles/data_loader.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build/CMakeFiles --progress-num=3,4,5 "Built target data_loader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles --progress-num=3,4,5 "Built target data_loader"
 .PHONY : CMakeFiles/data_loader.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/data_loader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/data_loader.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles 0
 .PHONY : CMakeFiles/data_loader.dir/rule
 
 # Convenience name for target.
@@ -127,6 +129,32 @@ data_loader: CMakeFiles/data_loader.dir/rule
 CMakeFiles/data_loader.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_loader.dir/build.make CMakeFiles/data_loader.dir/clean
 .PHONY : CMakeFiles/data_loader.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/strategy_loader.dir
+
+# All Build rule for target.
+CMakeFiles/strategy_loader.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/strategy_loader.dir/build.make CMakeFiles/strategy_loader.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/strategy_loader.dir/build.make CMakeFiles/strategy_loader.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles --progress-num=6,7 "Built target strategy_loader"
+.PHONY : CMakeFiles/strategy_loader.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/strategy_loader.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/strategy_loader.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles 0
+.PHONY : CMakeFiles/strategy_loader.dir/rule
+
+# Convenience name for target.
+strategy_loader: CMakeFiles/strategy_loader.dir/rule
+.PHONY : strategy_loader
+
+# clean rule for target.
+CMakeFiles/strategy_loader.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/strategy_loader.dir/build.make CMakeFiles/strategy_loader.dir/clean
+.PHONY : CMakeFiles/strategy_loader.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

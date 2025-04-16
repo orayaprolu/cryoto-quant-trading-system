@@ -1,11 +1,29 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
 #include <curl/curl.h>
 #include <nlohmann/json.hpp>
 
-// For conveniencez
+// For convenience
 using json = nlohmann::json;
+
+// Load top 50 coins
+const std::vector<std::string> loadTopSymbols(const std::string& filename) {
+  std::ifstream file(filename);
+  if (!file.is_open()) {
+      std::cerr << "Failed to open file: " << filename << std::endl;
+      return {};
+  }
+  std::vector<std::string> symbols;
+  std::string line;
+  while (std::getline(file, line)) {
+    if (!line.empty()) {
+      symbols.push_back(line);
+    }
+  }
+  return symbols;
+}
 
 // This function stores the response from libcurl
 static size_t WriteCallback(void* contents, size_t size, size_t nmemb, void* userp) {
@@ -45,8 +63,14 @@ void binance_data_to_csv(std::string symbol, std::string interval, const int lim
             json response = json::parse(readBuffer);
 
             // Write to CSV
-            std::ofstream outFile("../data/" + symbol + "_" + interval + ".csv");
+            std::ofstream outFile("./data/" + symbol + "_" + interval + ".csv");
             outFile << "OpenTime,Open,High,Low,Close,Volume\n";
+
+            if (!response.is_array()) {
+                std::cerr << "Unexpected response from Binance:\n" << response.dump(2) << "\n";
+                curl_easy_cleanup(curl);
+                return;
+            }
 
             for (const auto& candle : response) {
                 outFile
@@ -68,5 +92,9 @@ void binance_data_to_csv(std::string symbol, std::string interval, const int lim
 }
 
 int main() {
-    return 0;
+  const std::vector<std::string> coins_vec = loadTopSymbols("./data/top50.txt");
+  for (auto coin : coins_vec) {
+    binance_data_to_csv(coin, "1d");
+  }
+  return 0;
 }

@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ojasr/Documents/Repos/cryoto-quant-trading-system
+CMAKE_SOURCE_DIR = /Users/ojasr/Documents/Repos/crypto-quant-trading-system
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build
+CMAKE_BINARY_DIR = /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build/CMakeFiles /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ojasr/Documents/Repos/cryoto-quant-trading-system/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ojasr/Documents/Repos/crypto-quant-trading-system/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,6 +142,19 @@ data_loader/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_loader.dir/build.make CMakeFiles/data_loader.dir/build
 .PHONY : data_loader/fast
 
+#=============================================================================
+# Target rules for targets named strategy_loader
+
+# Build rule for target.
+strategy_loader: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 strategy_loader
+.PHONY : strategy_loader
+
+# fast build rule for target.
+strategy_loader/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/strategy_loader.dir/build.make CMakeFiles/strategy_loader.dir/build
+.PHONY : strategy_loader/fast
+
 backtesting_engine/CandleStream.o: backtesting_engine/CandleStream.cpp.o
 .PHONY : backtesting_engine/CandleStream.o
 
@@ -190,6 +203,30 @@ backtesting_engine/data_loader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_loader.dir/build.make CMakeFiles/data_loader.dir/backtesting_engine/data_loader.cpp.s
 .PHONY : backtesting_engine/data_loader.cpp.s
 
+backtesting_engine/strategy_loader.o: backtesting_engine/strategy_loader.cpp.o
+.PHONY : backtesting_engine/strategy_loader.o
+
+# target to build an object file
+backtesting_engine/strategy_loader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/strategy_loader.dir/build.make CMakeFiles/strategy_loader.dir/backtesting_engine/strategy_loader.cpp.o
+.PHONY : backtesting_engine/strategy_loader.cpp.o
+
+backtesting_engine/strategy_loader.i: backtesting_engine/strategy_loader.cpp.i
+.PHONY : backtesting_engine/strategy_loader.i
+
+# target to preprocess a source file
+backtesting_engine/strategy_loader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/strategy_loader.dir/build.make CMakeFiles/strategy_loader.dir/backtesting_engine/strategy_loader.cpp.i
+.PHONY : backtesting_engine/strategy_loader.cpp.i
+
+backtesting_engine/strategy_loader.s: backtesting_engine/strategy_loader.cpp.s
+.PHONY : backtesting_engine/strategy_loader.s
+
+# target to generate assembly for a file
+backtesting_engine/strategy_loader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/strategy_loader.dir/build.make CMakeFiles/strategy_loader.dir/backtesting_engine/strategy_loader.cpp.s
+.PHONY : backtesting_engine/strategy_loader.cpp.s
+
 data_ingestion/binance_fetch.o: data_ingestion/binance_fetch.cpp.o
 .PHONY : data_ingestion/binance_fetch.o
 
@@ -224,12 +261,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... binance_fetch"
 	@echo "... data_loader"
+	@echo "... strategy_loader"
 	@echo "... backtesting_engine/CandleStream.o"
 	@echo "... backtesting_engine/CandleStream.i"
 	@echo "... backtesting_engine/CandleStream.s"
 	@echo "... backtesting_engine/data_loader.o"
 	@echo "... backtesting_engine/data_loader.i"
 	@echo "... backtesting_engine/data_loader.s"
+	@echo "... backtesting_engine/strategy_loader.o"
+	@echo "... backtesting_engine/strategy_loader.i"
+	@echo "... backtesting_engine/strategy_loader.s"
 	@echo "... data_ingestion/binance_fetch.o"
 	@echo "... data_ingestion/binance_fetch.i"
 	@echo "... data_ingestion/binance_fetch.s"
